@@ -34,10 +34,7 @@ function ZoomOverlay() {
       {!isReaderMode && (
         <>
           <div className="dividerSmall" />
-          <div className="ZoomItem" role="option">
-            <Icon className="ZoomIcon" glyph="icon-header-zoom-marquee" />
-            <ToolButton className="ZoomToolButton" toolName="MarqueeZoomTool" label={t('tool.Marquee')} />
-          </div>
+          <ToolButton className="ZoomItem ZoomToolButton" img="icon-header-zoom-marquee" toolName="MarqueeZoomTool" label={t('tool.Marquee')} />
         </>
       )}
     </FlyoutMenu>
