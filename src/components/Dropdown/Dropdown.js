@@ -8,7 +8,7 @@ import DataElementWrapper from 'components/DataElementWrapper';
 import useArrowFocus from '../../hooks/useArrowFocus';
 import './Dropdown.scss';
 
-const DEFAULT_WIDTH = 94;
+const DEFAULT_WIDTH = 36;
 
 const propTypes = {
   onClickItem: PropTypes.func.isRequired,
@@ -67,7 +67,7 @@ function Dropdown({ items = [], currentSelectionKey, translationPrefix, onClickI
   const optionIsSelected = items.some(key => key === currentSelectionKey);
 
   const buttonStyle = useMemo(
-    () => ({ width: `${(itemsWidth || DEFAULT_WIDTH) + 2}px` }),
+    () => ({ }),
     [itemsWidth],
   );
 
