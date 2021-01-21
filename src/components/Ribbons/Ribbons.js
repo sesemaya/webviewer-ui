@@ -146,7 +146,7 @@ function ExitWidgetEditingButton({ containerWidth }) {
   return (
     <ActionButton
       dataElement="exitFormEditingButton"
-      label={containerWidth < 150 ? 'action.exit' : 'action.exitFormEditing'}
+      label={containerWidth < 180 ? 'action.exit' : 'action.exitFormEditing'}
       onClick={() => {
         const widgetEditingManager = core.getWidgetEditingManager();
         widgetEditingManager.endEditing();
