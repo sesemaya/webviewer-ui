@@ -97,11 +97,25 @@ const NoteContent = ({ annotation, isEditing, setIsEditing, noteIndex, onTextCha
 
   const renderContents = useCallback(
     contents => {
+      const contentsRaw = contents;
+
       contents = escapeHtml(contents);
 
       let text;
-      const transformedContents = Autolinker.link(contents, {
+      const transformedContents = Autolinker.link(contentsRaw, {
+        className: 'embedly-card',
         stripPrefix: false,
+        stripTrailingSlash: false,
+        replaceFn: function(match) {
+          var tag = match.buildTag();
+          tag.setAttr('data-card-chrome', '0');
+          tag.setAttr('data-card-controls', '0');
+          tag.setAttr('data-card-css', 'https://read.boxofbooks.io/css/webview2/card.css');
+          tag.setAttr('data-card-key', 'a97e5cbc774b4bbea6ad3b39ea84aa0c');
+          tag.setAttr('data-card-width', '100%');
+
+          return tag;
+        }
       });
       if (transformedContents.includes('<a')) {
         // if searchInput is 't', replace <a ...>text</a> with
