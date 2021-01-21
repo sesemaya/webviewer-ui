@@ -121,14 +121,6 @@ const LeftPanel = () => {
           />
         ))}
       </div>
-      {!isTabletAndMobile &&
-        <ResizeBar
-          dataElement="leftPanelResizeBar"
-          minWidth={minWidth}
-          onResize={_width => {
-            dispatch(actions.setLeftPanelWidth(_width));
-          }}
-        />}
     </div>
   );
 };

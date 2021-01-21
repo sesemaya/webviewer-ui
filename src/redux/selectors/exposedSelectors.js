@@ -32,7 +32,7 @@ export const getSearchPanelWidth = state =>
 export const getNotesPanelWidth = state =>
   state.viewer.panelWidths.notesPanel;
 
-const RESIZE_BAR_WIDTH = 14; // 14px Need to update this if styling results in a change to width.
+const RESIZE_BAR_WIDTH = 0; // Need to update this if styling results in a change to width.
 export const getLeftPanelWidthWithReszieBar = state =>
   state.viewer.panelWidths.leftPanel + RESIZE_BAR_WIDTH;
 export const getSearchPanelWidthWithReszieBar = state =>

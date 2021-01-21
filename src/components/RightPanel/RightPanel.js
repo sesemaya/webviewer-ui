@@ -41,13 +41,6 @@ const RightPanel = ({ children, dataElement, onResize }) => {
         'tools-header-open': isToolsHeaderOpen && currentToolbarGroup !== 'toolbarGroup-View',
       })}
     >
-      {!isTabletAndMobile &&
-        <ResizeBar
-          dataElement={`${dataElement}ResizeBar`}
-          minWidth={293}
-          onResize={onResize}
-          leftDirection
-        />}
       {children}
     </div>
   );
