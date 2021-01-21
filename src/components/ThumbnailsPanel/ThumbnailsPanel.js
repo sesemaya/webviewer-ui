@@ -55,7 +55,7 @@ class ThumbnailsPanel extends React.PureComponent {
       width: 0,
       draggingOverPageIndex: null,
       isDraggingToPreviousPage: false,
-      allowPageOperations: true,
+      allowPageOperations: false,
     };
   }
 

@@ -214,7 +214,6 @@ class Thumbnail extends React.PureComponent {
           <div ref={this.thumbContainer} className="thumbnail" />
         </div>
         <div className="page-label">{pageLabel}</div>
-        {isActive && shouldShowControls && <ThumbnailControls index={index} />}
       </div>
     );
   }
