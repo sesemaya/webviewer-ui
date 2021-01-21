@@ -105,11 +105,7 @@ const ReplyArea = ({ annotation }) => {
     setPendingReply('', annotation.Id);
   };
 
-  const ifReplyNotAllowed =
-    isReadOnly ||
-    isReplyDisabled ||
-    isReplyDisabledForAnnotation ||
-    (isNoteEditingTriggeredByAnnotationPopup && isContentEditable);
+  const ifReplyNotAllowed = true;
 
   return ifReplyNotAllowed ? null : (
     <div
