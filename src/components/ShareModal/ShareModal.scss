@@ -1,0 +1,12 @@
+@import '../../constants/styles';
+@import '../../constants/modal';
+
+.ShareModal {
+  @extend %modal;
+
+  .container {
+    @extend %modal-shared-container-style;
+
+    user-select: auto;
+  }
+}
