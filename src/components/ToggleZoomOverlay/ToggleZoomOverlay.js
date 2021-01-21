@@ -88,6 +88,18 @@ const ToggleZoomOverlay = () => {
 
   return (
     <div className="zoom-overlay">
+      <ActionButton
+        img="icon-header-zoom-out-line"
+        onClick={zoomOut}
+        title="action.zoomOut"
+        dataElement="zoomOutButton"
+      />
+      <ActionButton
+        img="icon-header-zoom-in-line"
+        onClick={zoomIn}
+        title="action.zoomIn"
+        dataElement="zoomInButton"
+      />
       {!isMobile &&
         <div className="ToggleZoomOverlay">
           <div
@@ -122,18 +134,6 @@ const ToggleZoomOverlay = () => {
             />
           </div>
         </div>}
-      <ActionButton
-        img="icon-header-zoom-out-line"
-        onClick={zoomOut}
-        title="action.zoomOut"
-        dataElement="zoomOutButton"
-      />
-      <ActionButton
-        img="icon-header-zoom-in-line"
-        onClick={zoomIn}
-        title="action.zoomIn"
-        dataElement="zoomInButton"
-      />
     </div>
   );
 };
