@@ -33,6 +33,10 @@ import getHashParams from 'helpers/getHashParams';
 
 import './index.scss';
 
+const embedlyScript = document.createElement('script');
+embedlyScript.setAttribute('src', 'https://cdn.embedly.com/widgets/platform.js');
+document.body.append(embedlyScript);
+
 const middleware = [thunk];
 
 let composeEnhancer = function noopStoreComposeEnhancer(middleware) {
@@ -48,7 +52,6 @@ if (process.env.NODE_ENV === 'development') {
   const { composeWithDevTools } = require('redux-devtools-extension/logOnlyInProduction');
   composeEnhancer = composeWithDevTools({});
 }
-
 
 const store = createStore(rootReducer, composeEnhancer(applyMiddleware(...middleware)));
 const persistor = persistStore(store);
