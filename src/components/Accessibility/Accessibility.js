@@ -50,11 +50,11 @@ function Accessibility() {
 
   return (
     <div className={a11yClass} data-element="accessibility" onFocus={onFocus} onBlur={onBlur}>
-      <div>Skip to: </div>
+      <span>Skip to:</span>
 
-      <button onClick={onSkipToDocument}>Document</button>
-      {isSearchPanelDisabled ? null : <button onClick={onSkipToSearch}>Search</button>}
-      {isNotesPanelDisabled ? null : <button onClick={onSkipToNotes}>Notes</button>}
+      <button onClick={onSkipToDocument} type="button">Document</button>
+      {isSearchPanelDisabled ? null : <button onClick={onSkipToSearch} type="button">Search</button>}
+      {isNotesPanelDisabled ? null : <button onClick={onSkipToNotes} type="button">Notes</button>}
     </div>
   );
 }
