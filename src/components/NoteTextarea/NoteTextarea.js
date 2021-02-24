@@ -66,11 +66,7 @@ const NoteTextarea = React.forwardRef((props, forwardedRef) => {
     onKeyDown: handleKeyDown,
   };
 
-  return userData?.length ? (
-    <React.Suspense fallback={<div>Loading...</div>}>
-      <MentionsTextarea {...textareaProps} userData={userData} />
-    </React.Suspense>
-  ) : (
+  return userData?.length ? ('') : (
     <AutoResizeTextarea {...textareaProps} />
   );
 });
