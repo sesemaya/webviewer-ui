@@ -14,6 +14,7 @@ import DocumentContainer from 'components/DocumentContainer';
 import LeftPanel from 'components/LeftPanel';
 import NotesPanel from 'components/NotesPanel';
 import SearchPanel from 'components/SearchPanel';
+import ShareModal from 'components/ShareModal';
 import RightPanel from 'components/RightPanel';
 import AnnotationPopup from 'components/AnnotationPopup';
 import TextPopup from 'components/TextPopup';
@@ -112,6 +113,7 @@ const App = ({ removeEventHandlers }) => {
         <TextPopup />
         <ContextMenuPopup />
         <RichTextPopup />
+        <ShareModal />
         <SignatureModal />
         <PrintModal />
         <LoadingModal />
