@@ -174,10 +174,10 @@ const InkSignature = ({
       <div
         className="footer"
       >
-        <button className="signature-clear" onClick={clearCanvas}>
+        <button className="Button signature-clear" onClick={clearCanvas}>
           {t('action.clear')}
         </button>
-        <button className="signature-create" onClick={createSignature}>
+        <button className="Button signature-create" onClick={createSignature}>
           {t('action.create')}
         </button>
       </div>

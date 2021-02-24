@@ -149,10 +149,10 @@ const TextSignature = ({
       <div
         className="footer"
       >
-        <button className="signature-clear" onClick={() => setValue('')} disabled={!(isModalOpen && isTabPanelSelected)}>
+        <button className="Button signature-clear" onClick={() => setValue('')} disabled={!(isModalOpen && isTabPanelSelected)}>
           {t('action.clear')}
         </button>
-        <button className="signature-create" onClick={createSignature} disabled={!(isModalOpen && isTabPanelSelected)}>
+        <button className="Button signature-create" onClick={createSignature} disabled={!(isModalOpen && isTabPanelSelected)}>
           {t('action.create')}
         </button>
       </div>
