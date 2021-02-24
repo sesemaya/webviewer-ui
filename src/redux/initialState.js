@@ -57,6 +57,7 @@ export default {
     allowPageNavigation: true,
     annotationContentOverlayHandler: null,
     annotationPopup: [
+      { dataElement: 'linkButton' },
       { dataElement: 'annotationCommentButton' },
       { dataElement: 'annotationStyleEditButton' },
       { dataElement: 'annotationDeleteButton' }
